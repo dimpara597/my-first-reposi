@@ -1,0 +1,21 @@
+# Κλωνοποίησε το repository τοπικά
+git clone https://github.com/username/my-first-repo.git
+
+# Μετάφερε στον φάκελο του repository
+cd my-first-repo
+
+# Πρόσθεσε ένα νέο αρχείο
+echo "Hello, GitHub!" > hello.txt
+
+# Πρόσθεσε και αποθήκευσε τις αλλαγές
+git add hello.txt
+git commit -m "Add hello.txt"
+
+# Στείλε τις αλλαγές πίσω στο GitHub
+git push origin main
+git init
+git add .
+git commit -m "Πρώτο commit"
+git branch -M main
+git remote add origin https://github.com/username/repository-name.git
+git push -u origin main
